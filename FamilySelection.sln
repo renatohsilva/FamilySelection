@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32414.318
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FamilySelection", "FamilySelection\FamilySelection.csproj", "{FD8BBFE5-F584-4B57-AC29-8564275CB04F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FamilySelection.Application", "FamilySelection\FamilySelection.Application.csproj", "{FD8BBFE5-F584-4B57-AC29-8564275CB04F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{575A8056-E49F-46F9-8BA4-4DAE616CDA25}"
 EndProject
@@ -13,21 +13,35 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{26634480-2
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{FD4A95D1-48D2-4980-9057-D4E4609C2AFA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FamilySelection.Domain", "FamilySelection.Domain\FamilySelection.Domain.csproj", "{BEC0EBDA-68A9-4E9B-8395-0520F960EA38}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FamilySelection.Domain", "FamilySelection.Domain\FamilySelection.Domain.csproj", "{BEC0EBDA-68A9-4E9B-8395-0520F960EA38}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{83D88E12-18AF-4CF1-9F6F-157646EA28C1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{18ABAC32-8050-444E-815E-D465D4D06F22}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FamilySelection.Service.Common", "FamilySelection.Service.Common\FamilySelection.Service.Common.csproj", "{0F734387-BE02-4265-8EC4-5CEF3128F2BF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FamilySelection.Service.Common", "FamilySelection.Service.Common\FamilySelection.Service.Common.csproj", "{0F734387-BE02-4265-8EC4-5CEF3128F2BF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Validator", "Validator", "{7C04147F-6B01-4A0B-B42E-479D15C53050}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FamilySelection.Service.Validator", "FamilySelection.Service.Validator\FamilySelection.Service.Validator.csproj", "{F8142B2A-1E0A-4BCE-906C-7175F913F507}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FamilySelection.Service.Validator", "FamilySelection.Service.Validator\FamilySelection.Service.Validator.csproj", "{F8142B2A-1E0A-4BCE-906C-7175F913F507}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infra", "Infra", "{C776125D-F90C-48B0-BB9C-B7838EA5F90C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FamilySelection.Infra.Data", "FamilySelection.Infra.Data\FamilySelection.Infra.Data.csproj", "{B3120E58-48B1-4845-89DA-BB18756BC782}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FamilySelection.Infra.Data", "FamilySelection.Infra.Data\FamilySelection.Infra.Data.csproj", "{B3120E58-48B1-4845-89DA-BB18756BC782}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{7DEC629E-3C0D-407F-9A4F-DC09E8C5A170}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FamilySelection.Application.Common", "FamilySelection.Application.Common\FamilySelection.Application.Common.csproj", "{F985D0D8-FBD4-4343-921C-A6254B3E167E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{C2DE032E-5C7B-4133-8DEE-EB1526B47840}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{969481C9-715D-468A-958A-9B77B9853FBD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FamilySelection.Application.Common.Tests", "FamilySelection.Application.Common.Tests\FamilySelection.Application.Common.Tests.csproj", "{EB0AF454-04DE-4E17-ABD2-EF7D230182F0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Util", "Util", "{51AA4405-CD9E-44CE-90F0-64C44AA119CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FamilySelection.Test.Util", "FamilySelection.Test.Util\FamilySelection.Test.Util.csproj", "{18FDBCED-5653-4DA1-8075-DD8D90480B16}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,6 +69,18 @@ Global
 		{B3120E58-48B1-4845-89DA-BB18756BC782}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B3120E58-48B1-4845-89DA-BB18756BC782}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B3120E58-48B1-4845-89DA-BB18756BC782}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F985D0D8-FBD4-4343-921C-A6254B3E167E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F985D0D8-FBD4-4343-921C-A6254B3E167E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F985D0D8-FBD4-4343-921C-A6254B3E167E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F985D0D8-FBD4-4343-921C-A6254B3E167E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB0AF454-04DE-4E17-ABD2-EF7D230182F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB0AF454-04DE-4E17-ABD2-EF7D230182F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB0AF454-04DE-4E17-ABD2-EF7D230182F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB0AF454-04DE-4E17-ABD2-EF7D230182F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18FDBCED-5653-4DA1-8075-DD8D90480B16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18FDBCED-5653-4DA1-8075-DD8D90480B16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18FDBCED-5653-4DA1-8075-DD8D90480B16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18FDBCED-5653-4DA1-8075-DD8D90480B16}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -71,6 +97,13 @@ Global
 		{F8142B2A-1E0A-4BCE-906C-7175F913F507} = {7C04147F-6B01-4A0B-B42E-479D15C53050}
 		{C776125D-F90C-48B0-BB9C-B7838EA5F90C} = {575A8056-E49F-46F9-8BA4-4DAE616CDA25}
 		{B3120E58-48B1-4845-89DA-BB18756BC782} = {C776125D-F90C-48B0-BB9C-B7838EA5F90C}
+		{7DEC629E-3C0D-407F-9A4F-DC09E8C5A170} = {2B446D59-B48A-418C-BD01-6C8B724E5530}
+		{F985D0D8-FBD4-4343-921C-A6254B3E167E} = {7DEC629E-3C0D-407F-9A4F-DC09E8C5A170}
+		{C2DE032E-5C7B-4133-8DEE-EB1526B47840} = {26634480-2833-4A19-894F-2131A363A594}
+		{969481C9-715D-468A-958A-9B77B9853FBD} = {C2DE032E-5C7B-4133-8DEE-EB1526B47840}
+		{EB0AF454-04DE-4E17-ABD2-EF7D230182F0} = {969481C9-715D-468A-958A-9B77B9853FBD}
+		{51AA4405-CD9E-44CE-90F0-64C44AA119CC} = {26634480-2833-4A19-894F-2131A363A594}
+		{18FDBCED-5653-4DA1-8075-DD8D90480B16} = {51AA4405-CD9E-44CE-90F0-64C44AA119CC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {71BB22E2-59D5-4CF7-8DC7-6FD9F351928A}

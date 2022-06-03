@@ -5,10 +5,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FamilySelection.Infra.Data.Interfaces
+namespace FamilySelection.Service.Common.Interfaces
 {
-    public interface IFamilyRepository : IGenericRepository<Family>
+    public interface IPontuationRule
     {
-        public Task<IEnumerable<Family>> GetAllPeople();
+        int GetPontuation(Family family);
     }
 }

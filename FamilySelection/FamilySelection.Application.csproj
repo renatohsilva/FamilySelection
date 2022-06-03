@@ -22,6 +22,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\FamilySelection.Application.Common\FamilySelection.Application.Common.csproj" />
     <ProjectReference Include="..\FamilySelection.Domain\FamilySelection.Domain.csproj" />
     <ProjectReference Include="..\FamilySelection.Infra.Data\FamilySelection.Infra.Data.csproj" />
     <ProjectReference Include="..\FamilySelection.Service.Common\FamilySelection.Service.Common.csproj" />

@@ -4,6 +4,7 @@ using FamilySelection.Infra.Data.Interfaces;
 using FamilySelection.Infra.Data.Repositories;
 using FamilySelection.Service.Common.Interfaces;
 using FamilySelection.Service.Common.Services;
+using FamilySelection.Service.Common.Services.PontuationRules;
 using FamilySelection.Service.Validator.Validators;
 using FluentValidation;
 using Microsoft.EntityFrameworkCore;
@@ -60,4 +61,9 @@ void ConfigureBusinessServices(IServiceCollection services)
 {
     services.AddScoped<IPersonService, PersonService>();
     services.AddScoped<IFamilyService, FamilyService>();
+    services.AddScoped<IPontuationService, PontuationService>(); 
+    services.AddTransient<IPontuationRule, Over3DependentsRule>();
+    services.AddTransient<IPontuationRule, Over900Under1500Rule>();
+    services.AddTransient<IPontuationRule, Under3DependentsRule>();
+    services.AddTransient<IPontuationRule, Under900Rule>();
 }

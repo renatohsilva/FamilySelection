@@ -10,5 +10,11 @@ namespace FamilySelection.Service.Validator.Validators
 {
     public class PersonValidator : AbstractValidator<Person>
     {
+        public PersonValidator()
+        {
+            RuleFor(x => x.Name).NotEmpty().WithMessage("Campo Nome é obrigatório!");
+            RuleFor(x => x.Salary).GreaterThan(0).WithMessage("Campo Salário é obrigatório e tem que ser maior do que '0'!");
+            RuleFor(x => x.Age).NotEmpty().WithMessage("Campo Idade é obrigatório!");
+        }
     }
 }

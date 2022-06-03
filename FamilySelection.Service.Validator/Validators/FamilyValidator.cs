@@ -10,5 +10,10 @@ namespace FamilySelection.Service.Validator.Validators
 {
     public class FamilyValidator : AbstractValidator<Family>
     {
+        public FamilyValidator()
+        {
+            RuleFor(x => x.Code).NotEmpty().WithMessage("Campo Código é obrigatório!");
+            RuleFor(x => x.Description).NotEmpty().WithMessage("Campo Descrição é obrigatório!");            
+        }
     }
 }

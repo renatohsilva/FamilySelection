@@ -1,20 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FamilySelection.Domain.Entities
+namespace FamilySelection.Domain.DTOs
 {
-    public class Family : BaseEntity
+    public class FamilyDto
     {
-        [Required]
         public int Code { get; set; }
-
-        [Required]
         public string Description { get; set; }
-        
-        public List<Person> People { get; set; }
+        public int Pontuation { get; set; }
     }
 }

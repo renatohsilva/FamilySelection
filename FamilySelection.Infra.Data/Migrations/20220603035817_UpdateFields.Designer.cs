@@ -3,6 +3,7 @@ using System;
 using FamilySelection.Infra.Data.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -11,9 +12,10 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace FamilySelection.Infra.Data.Migrations
 {
     [DbContext(typeof(FamilySelectionDataContext))]
-    partial class FamilySelectionDataContextModelSnapshot : ModelSnapshot
+    [Migration("20220603035817_UpdateFields")]
+    partial class UpdateFields
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -30,8 +32,8 @@ namespace FamilySelection.Infra.Data.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("Code")
-                        .HasColumnType("integer");
+                    b.Property<bool>("Active")
+                        .HasColumnType("boolean");
 
                     b.Property<string>("Description")
                         .IsRequired()
@@ -73,13 +75,13 @@ namespace FamilySelection.Infra.Data.Migrations
             modelBuilder.Entity("FamilySelection.Domain.Entities.Person", b =>
                 {
                     b.HasOne("FamilySelection.Domain.Entities.Family", null)
-                        .WithMany("People")
+                        .WithMany("Persons")
                         .HasForeignKey("FamilyId");
                 });
 
             modelBuilder.Entity("FamilySelection.Domain.Entities.Family", b =>
                 {
-                    b.Navigation("People");
+                    b.Navigation("Persons");
                 });
 #pragma warning restore 612, 618
         }
